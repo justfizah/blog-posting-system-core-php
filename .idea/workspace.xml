@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="942b46ec-dcdd-4b1e-a18f-0d2a5b9b4095" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/admin/includes/helpers/db.sql" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/admin/assets/css/bootstrap.min.css" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/css/sb-admin.css" afterPath="$PROJECT_DIR$/admin/assets/css/sb-admin.css" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/datatables/dataTables.bootstrap4.css" afterPath="$PROJECT_DIR$/admin/assets/datatables/dataTables.bootstrap4.css" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/datatables/dataTables.bootstrap4.js" afterPath="$PROJECT_DIR$/admin/assets/datatables/dataTables.bootstrap4.js" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/datatables/jquery.dataTables.js" afterPath="$PROJECT_DIR$/admin/assets/datatables/jquery.dataTables.js" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/font-awesome/css/font-awesome.css" afterPath="$PROJECT_DIR$/admin/assets/font-awesome/css/font-awesome.css" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/font-awesome/css/font-awesome.min.css" afterPath="$PROJECT_DIR$/admin/assets/font-awesome/css/font-awesome.min.css" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/font-awesome/fonts/FontAwesome.otf" afterPath="$PROJECT_DIR$/admin/assets/font-awesome/fonts/FontAwesome.otf" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/font-awesome/fonts/fontawesome-webfont.eot" afterPath="$PROJECT_DIR$/admin/assets/font-awesome/fonts/fontawesome-webfont.eot" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/font-awesome/fonts/fontawesome-webfont.svg" afterPath="$PROJECT_DIR$/admin/assets/font-awesome/fonts/fontawesome-webfont.svg" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/font-awesome/fonts/fontawesome-webfont.ttf" afterPath="$PROJECT_DIR$/admin/assets/font-awesome/fonts/fontawesome-webfont.ttf" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/font-awesome/fonts/fontawesome-webfont.woff" afterPath="$PROJECT_DIR$/admin/assets/font-awesome/fonts/fontawesome-webfont.woff" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/font-awesome/fonts/fontawesome-webfont.woff2" afterPath="$PROJECT_DIR$/admin/assets/font-awesome/fonts/fontawesome-webfont.woff2" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/font-awesome/less/animated.less" afterPath="$PROJECT_DIR$/admin/assets/font-awesome/less/animated.less" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/font-awesome/less/bordered-pulled.less" afterPath="$PROJECT_DIR$/admin/assets/font-awesome/less/bordered-pulled.less" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/font-awesome/less/core.less" afterPath="$PROJECT_DIR$/admin/assets/font-awesome/less/core.less" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/font-awesome/less/fixed-width.less" afterPath="$PROJECT_DIR$/admin/assets/font-awesome/less/fixed-width.less" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/font-awesome/less/font-awesome.less" afterPath="$PROJECT_DIR$/admin/assets/font-awesome/less/font-awesome.less" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/font-awesome/less/icons.less" afterPath="$PROJECT_DIR$/admin/assets/font-awesome/less/icons.less" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/font-awesome/less/larger.less" afterPath="$PROJECT_DIR$/admin/assets/font-awesome/less/larger.less" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/font-awesome/less/list.less" afterPath="$PROJECT_DIR$/admin/assets/font-awesome/less/list.less" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/font-awesome/less/mixins.less" afterPath="$PROJECT_DIR$/admin/assets/font-awesome/less/mixins.less" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/font-awesome/less/path.less" afterPath="$PROJECT_DIR$/admin/assets/font-awesome/less/path.less" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/font-awesome/less/rotated-flipped.less" afterPath="$PROJECT_DIR$/admin/assets/font-awesome/less/rotated-flipped.less" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/font-awesome/less/screen-reader.less" afterPath="$PROJECT_DIR$/admin/assets/font-awesome/less/screen-reader.less" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/font-awesome/less/stacked.less" afterPath="$PROJECT_DIR$/admin/assets/font-awesome/less/stacked.less" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/font-awesome/less/variables.less" afterPath="$PROJECT_DIR$/admin/assets/font-awesome/less/variables.less" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/font-awesome/scss/_animated.scss" afterPath="$PROJECT_DIR$/admin/assets/font-awesome/scss/_animated.scss" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/font-awesome/scss/_bordered-pulled.scss" afterPath="$PROJECT_DIR$/admin/assets/font-awesome/scss/_bordered-pulled.scss" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/font-awesome/scss/_core.scss" afterPath="$PROJECT_DIR$/admin/assets/font-awesome/scss/_core.scss" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/font-awesome/scss/_fixed-width.scss" afterPath="$PROJECT_DIR$/admin/assets/font-awesome/scss/_fixed-width.scss" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/font-awesome/scss/_icons.scss" afterPath="$PROJECT_DIR$/admin/assets/font-awesome/scss/_icons.scss" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/font-awesome/scss/_larger.scss" afterPath="$PROJECT_DIR$/admin/assets/font-awesome/scss/_larger.scss" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/font-awesome/scss/_list.scss" afterPath="$PROJECT_DIR$/admin/assets/font-awesome/scss/_list.scss" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/font-awesome/scss/_mixins.scss" afterPath="$PROJECT_DIR$/admin/assets/font-awesome/scss/_mixins.scss" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/font-awesome/scss/_path.scss" afterPath="$PROJECT_DIR$/admin/assets/font-awesome/scss/_path.scss" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/font-awesome/scss/_rotated-flipped.scss" afterPath="$PROJECT_DIR$/admin/assets/font-awesome/scss/_rotated-flipped.scss" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/font-awesome/scss/_screen-reader.scss" afterPath="$PROJECT_DIR$/admin/assets/font-awesome/scss/_screen-reader.scss" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/font-awesome/scss/_stacked.scss" afterPath="$PROJECT_DIR$/admin/assets/font-awesome/scss/_stacked.scss" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/font-awesome/scss/_variables.scss" afterPath="$PROJECT_DIR$/admin/assets/font-awesome/scss/_variables.scss" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/font-awesome/scss/font-awesome.scss" afterPath="$PROJECT_DIR$/admin/assets/font-awesome/scss/font-awesome.scss" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/images/blogs/0721e3a58f46e1cb60c7899e3f796898.jpg" afterPath="$PROJECT_DIR$/admin/assets/images/blogs/0721e3a58f46e1cb60c7899e3f796898.jpg" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/images/blogs/2kXaIqC.jpg" afterPath="$PROJECT_DIR$/admin/assets/images/blogs/2kXaIqC.jpg" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/images/blogs/56e64d96d65a82b1bd9f336194e47370.jpg" afterPath="$PROJECT_DIR$/admin/assets/images/blogs/56e64d96d65a82b1bd9f336194e47370.jpg" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/images/blogs/a-year-from-now-quote-enquotes.jpg" afterPath="$PROJECT_DIR$/admin/assets/images/blogs/a-year-from-now-quote-enquotes.jpg" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/images/blogs/nurse-with-team-750x300.jpg" afterPath="$PROJECT_DIR$/admin/assets/images/blogs/nurse-with-team-750x300.jpg" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/admin/assets/js/bootstrap.min.js" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/js/jquery.min.js" afterPath="$PROJECT_DIR$/admin/assets/js/jquery.min.js" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/js/sb-admin.js" afterPath="$PROJECT_DIR$/admin/assets/js/sb-admin.js" />
+      <change beforePath="$PROJECT_DIR$/admin/blank.php" afterPath="$PROJECT_DIR$/admin/blank.php" />
+      <change beforePath="$PROJECT_DIR$/admin/includes/classes/category.php" afterPath="$PROJECT_DIR$/admin/includes/classes/category.php" />
+      <change beforePath="$PROJECT_DIR$/admin/includes/classes/database.php" afterPath="$PROJECT_DIR$/admin/includes/classes/database.php" />
+      <change beforePath="$PROJECT_DIR$/admin/includes/classes/flash.php" afterPath="$PROJECT_DIR$/admin/includes/classes/flash.php" />
+      <change beforePath="$PROJECT_DIR$/admin/includes/classes/post.php" afterPath="$PROJECT_DIR$/admin/includes/classes/post.php" />
+      <change beforePath="$PROJECT_DIR$/admin/includes/classes/session.php" afterPath="$PROJECT_DIR$/admin/includes/classes/session.php" />
+      <change beforePath="$PROJECT_DIR$/admin/includes/classes/user.php" afterPath="$PROJECT_DIR$/admin/includes/classes/user.php" />
+      <change beforePath="$PROJECT_DIR$/admin/includes/helpers/functions.php" afterPath="$PROJECT_DIR$/admin/includes/helpers/functions.php" />
+      <change beforePath="$PROJECT_DIR$/admin/includes/init.php" afterPath="$PROJECT_DIR$/admin/includes/init.php" />
+      <change beforePath="$PROJECT_DIR$/admin/includes/my_config.php" afterPath="$PROJECT_DIR$/admin/includes/my_config.php" />
+      <change beforePath="$PROJECT_DIR$/admin/includes/partials/footer.php" afterPath="$PROJECT_DIR$/admin/includes/partials/footer.php" />
+      <change beforePath="$PROJECT_DIR$/admin/includes/partials/header.php" afterPath="$PROJECT_DIR$/admin/includes/partials/header.php" />
+      <change beforePath="$PROJECT_DIR$/admin/index.php" afterPath="$PROJECT_DIR$/admin/index.php" />
+      <change beforePath="$PROJECT_DIR$/admin/login.php" afterPath="$PROJECT_DIR$/admin/login.php" />
+      <change beforePath="$PROJECT_DIR$/admin/logout.php" afterPath="$PROJECT_DIR$/admin/logout.php" />
+      <change beforePath="$PROJECT_DIR$/admin/modules/categories/create.php" afterPath="$PROJECT_DIR$/admin/modules/categories/create.php" />
+      <change beforePath="$PROJECT_DIR$/admin/modules/categories/delete.php" afterPath="$PROJECT_DIR$/admin/modules/categories/delete.php" />
+      <change beforePath="$PROJECT_DIR$/admin/modules/categories/index.php" afterPath="$PROJECT_DIR$/admin/modules/categories/index.php" />
+      <change beforePath="$PROJECT_DIR$/admin/modules/categories/update.php" afterPath="$PROJECT_DIR$/admin/modules/categories/update.php" />
+      <change beforePath="$PROJECT_DIR$/admin/modules/comments/create.php" afterPath="$PROJECT_DIR$/admin/modules/comments/create.php" />
+      <change beforePath="$PROJECT_DIR$/admin/modules/comments/delete.php" afterPath="$PROJECT_DIR$/admin/modules/comments/delete.php" />
+      <change beforePath="$PROJECT_DIR$/admin/modules/comments/index.php" afterPath="$PROJECT_DIR$/admin/modules/comments/index.php" />
+      <change beforePath="$PROJECT_DIR$/admin/modules/comments/update.php" afterPath="$PROJECT_DIR$/admin/modules/comments/update.php" />
+      <change beforePath="$PROJECT_DIR$/admin/modules/posts/create.php" afterPath="$PROJECT_DIR$/admin/modules/posts/create.php" />
+      <change beforePath="$PROJECT_DIR$/admin/modules/posts/delete.php" afterPath="$PROJECT_DIR$/admin/modules/posts/delete.php" />
+      <change beforePath="$PROJECT_DIR$/admin/modules/posts/index.php" afterPath="$PROJECT_DIR$/admin/modules/posts/index.php" />
+      <change beforePath="$PROJECT_DIR$/admin/modules/posts/update.php" afterPath="$PROJECT_DIR$/admin/modules/posts/update.php" />
+      <change beforePath="$PROJECT_DIR$/admin/modules/users/create.php" afterPath="$PROJECT_DIR$/admin/modules/users/create.php" />
+      <change beforePath="$PROJECT_DIR$/admin/modules/users/delete.php" afterPath="$PROJECT_DIR$/admin/modules/users/delete.php" />
+      <change beforePath="$PROJECT_DIR$/admin/modules/users/index.php" afterPath="$PROJECT_DIR$/admin/modules/users/index.php" />
+      <change beforePath="$PROJECT_DIR$/admin/modules/users/update.php" afterPath="$PROJECT_DIR$/admin/modules/users/update.php" />
+      <change beforePath="$PROJECT_DIR$/assets/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/assets/css/bootstrap.min.css" />
+      <change beforePath="$PROJECT_DIR$/assets/css/styles.css" afterPath="$PROJECT_DIR$/assets/css/styles.css" />
+      <change beforePath="$PROJECT_DIR$/assets/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/assets/js/bootstrap.min.js" />
+      <change beforePath="$PROJECT_DIR$/assets/js/jquery.min.js" afterPath="$PROJECT_DIR$/assets/js/jquery.min.js" />
+      <change beforePath="$PROJECT_DIR$/includes/partials/footer.php" afterPath="$PROJECT_DIR$/includes/partials/footer.php" />
+      <change beforePath="$PROJECT_DIR$/includes/partials/header.php" afterPath="$PROJECT_DIR$/includes/partials/header.php" />
+      <change beforePath="$PROJECT_DIR$/includes/partials/sidebar.php" afterPath="$PROJECT_DIR$/includes/partials/sidebar.php" />
+      <change beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
+      <change beforePath="$PROJECT_DIR$/post.php" afterPath="$PROJECT_DIR$/post.php" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/includes/partials/header.php" />
+        <option value="$PROJECT_DIR$/admin/includes/my_config.php" />
+        <option value="$PROJECT_DIR$/admin/includes/helpers/db.sql" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="65" />
+    <option name="y" value="-4" />
+    <option name="width" value="1301" />
+    <option name="height" value="772" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="public_html" type="b2602c69:ProjectViewProjectNode" />
+              <item name="public_html" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="942b46ec-dcdd-4b1e-a18f-0d2a5b9b4095" name="Default" comment="" />
+      <created>1520016748544</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1520016748544</updated>
+      <workItem from="1520016751984" duration="92000" />
+      <workItem from="1520016923758" duration="24000" />
+      <workItem from="1520016975486" duration="11000" />
+      <workItem from="1520017281187" duration="153000" />
+      <workItem from="1520098364752" duration="896000" />
+      <workItem from="1520102024106" duration="3790000" />
+      <workItem from="1520108088601" duration="17000" />
+      <workItem from="1520163998833" duration="14000" />
+      <workItem from="1520164031222" duration="8000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="5005000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="65" y="-4" width="1303" height="780" extended-state="6" />
+    <layout>
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24596465" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/includes/partials/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/includes/init.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/includes/classes/database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/includes/helpers/db.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="69" lean-forward="true" selection-start-line="5" selection-start-column="69" selection-end-line="5" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/assets/images/blogs/56e64d96d65a82b1bd9f336194e47370.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/assets/images/blogs/nurse-with-team-750x300.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/assets/images/blogs/0721e3a58f46e1cb60c7899e3f796898.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/assets/images/blogs/2kXaIqC.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/assets/images/blogs/a-year-from-now-quote-enquotes.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/post.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/includes/classes/category.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/includes/classes/post.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/includes/classes/session.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/includes/classes/user.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/includes/my_config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="20" column="2" lean-forward="true" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
