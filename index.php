@@ -21,7 +21,7 @@
         <div class="card-body">
           <h2 class="card-title"><?= $post->title; ?></h2>
           <p class="card-text" align="justify"><?= substr($post->content, 0, 255) . ' .....'; ?></p>
-          <a href="#" class="btn btn-primary">Read More &rarr;</a>
+          <a href="post.php?id=<?= $post->id; ?>" class="btn btn-primary">Read More &rarr;</a>
         </div>
         <div class="card-footer text-muted">
           Posted on <?= $post->created_at; ?> by
