@@ -10,9 +10,11 @@ if (isset($_GET['id'])) {
             $post->title = $_POST['title'];
             $post->category_id = $_POST['category_id'];
             $post->status = $_POST['status'];
-            $post->image = $_FILES['image']['name'];
-            $temp_path = $_FILES['image']['tmp_name'];
-            move_uploaded_file($temp_path, $_SERVER['DOCUMENT_ROOT'] . '/admin/assets/images/blogs/' . $post->image);
+            if ($_FILES['image']['name'] !== '' && $_FILES['image']['tmp_name'] !== '') {
+                $post->image = $_FILES['image']['name'];
+                $temp_path = $_FILES['image']['tmp_name'];
+                move_uploaded_file($temp_path, $_SERVER['DOCUMENT_ROOT'] . '/admin/assets/images/blogs/' . $post->image);
+            }
             $post->content = $_POST['content'];
             $post->tags = $_POST['tags'];
             $post->update();
