@@ -11,7 +11,9 @@
     <script src="/admin/assets/js/bootstrap.min.js"></script>
     <script src="/admin/assets/datatables/jquery.dataTables.js"></script>
     <script src="/admin/assets/datatables/dataTables.bootstrap4.js"></script>
+    <script src="https://cloud.tinymce.com/stable/tinymce.min.js?apiKey=vfnkh382k2rxi896qv26paohbk3onzydgrxgoxjq6w3fra7g"></script>
     <script src="/admin/assets/js/sb-admin.js"></script>
+    <script>tinymce.init({ selector:'textarea' });</script>
     
 </body>
 

@@ -6,6 +6,7 @@
 if (!$session->is_signed_in()) {
     $flash->set_message('danger', 'Sorry! You are not logged in.');
     redirect('/admin/login.php');
+    exit;
 }
 ?>
 
