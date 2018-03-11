@@ -4,3 +4,5 @@ CREATE TABLE `blog`.`categories` ( `id` INT(11) NOT NULL , `name` VARCHAR(255) N
 CREATE TABLE `blog`.`posts` ( `id` INT(11) NOT NULL AUTO_INCREMENT , `category_id` INT(11) NOT NULL , `author` VARCHAR(255) NOT NULL , `title` VARCHAR(255) NOT NULL , `image` TEXT NOT NULL , `content` TEXT NOT NULL , `tags` VARCHAR(255) NOT NULL , `comments_count` INT(11) NOT NULL , `status` VARCHAR(255) NOT NULL , `created_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP , `updated_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP , PRIMARY KEY (`id`)) ENGINE = InnoDB;
 ALTER TABLE `categories` CHANGE `id` `id` INT(11) NOT NULL AUTO_INCREMENT;
 ALTER TABLE `users` CHANGE `id` `id` INT(11) NOT NULL AUTO_INCREMENT;
+ALTER TABLE `posts` CHANGE `comments_count` `comments_count` INT( 11 ) NOT NULL DEFAULT '0';
+ALTER TABLE `posts` CHANGE `comments_count` `comments_count` INT( 11 ) NULL DEFAULT '0';

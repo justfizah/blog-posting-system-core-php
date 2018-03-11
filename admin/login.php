@@ -17,11 +17,15 @@ if (isset($_POST['login'])) {
     $username = trim($_POST['username']);
     $password = trim($_POST['password']);
 
-    $user_found = User::verify_user($username, $password);
+    $user = User::find_user_by_username($username);
 
-    if ($user_found) {
-        $session->login($user_found);
-        redirect('index.php');
+    if ($user) {
+        if (password_verify($password, $user->password)) {
+            $session->login($user);
+            redirect('index.php');
+        } else {
+            $message = 'Either your \'Password\' or \'Username\' may be incorrect.';
+        }
     } else {
         $message = 'Either your \'Password\' or \'Username\' may be incorrect.';
     }

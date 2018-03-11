@@ -7,7 +7,9 @@ if (isset($_GET['id'])) {
     if ($user) {
         if (isset($_POST['update'])) {
             $user->username   = $_POST['username'];
-            $user->password   = $_POST['password'];
+            if (isset($_POST['password']) && $_POST['password'] !== '') {
+                $user->password   = password_hash($_POST['password'], PASSWORD_BCRYPT);
+            }
             $user->first_name = $_POST['fname'];
             $user->last_name  = $_POST['lname'];
             $user->update();
@@ -48,7 +50,7 @@ if (isset($_GET['id'])) {
         	</div>
         	<div class="form-group">
 	        	<label for="password">Password</label>
-	        	<input type="text" name="password" class="form-control" value="<?= $user->password; ?>" required>
+	        	<input type="text" name="password" class="form-control">
         	</div>
         	<div class="form-group">
 	        	<label for="fname">First Name</label>

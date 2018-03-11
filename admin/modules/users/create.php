@@ -6,7 +6,7 @@ if (isset($_POST['create'])) {
     $user = new User;
     if ($user) {
         $user->username   = $_POST['username'];
-        $user->password   = $_POST['password'];
+        $user->password   = password_hash($_POST['password'], PASSWORD_BCRYPT);
         $user->first_name = $_POST['fname'];
         $user->last_name  = $_POST['lname'];
         $user->create();

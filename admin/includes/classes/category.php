@@ -6,6 +6,18 @@ class Category {
     public $created_at;
     public $updated_at;
 
+    public static function total_number_of_categories() {
+        global $database;
+        try {
+            $stmt = $database->connection->prepare('SELECT COUNT(id) FROM categories');
+            $stmt->execute();
+        } catch (PDOException $e) {
+            die('Query Failed! <br>' . $e->getMessage());
+        }
+        $result = $stmt->fetchAll(PDO::FETCH_NUM)[0][0];
+        return $result;
+    }
+
     public static function find_all_categories() {
         global $database;
         try {
