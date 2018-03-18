@@ -48,16 +48,17 @@
             </div>
             <div class="col-6">
                 <h4 class="text-center">Category List</h4>
-                <table class="table table-hover" id="dataTable" data-page-length='4'>
-                    <thead>
-                        <th>Name</th>
-                        <th class="sorting_asc_disabled sorting_desc_disabled"></th>
-                    </thead>
-                    <tbody>
+                <div class="table-responsive">
+                    <table class="table table-hover" id="dataTable" data-page-length='4'>
+                        <thead>
+                            <th>Name</th>
+                            <th class="sorting_asc_disabled sorting_desc_disabled"></th>
+                        </thead>
+                        <tbody>
                         <?php
                         $categories = Category::find_all_categories();
                         foreach ($categories as $category) :
-                        ?>
+                            ?>
                             <tr>
                                 <td><?= $category->name; ?></td>
                                 <td class="text-center">
@@ -66,8 +67,9 @@
                                 </td>
                             </tr>
                         <?php endforeach; ?>
-                    </tbody>
-                </table>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
 
