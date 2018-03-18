@@ -6,7 +6,6 @@ if (isset($_GET['id'])) {
     $post = Post::find_post_by_id($_GET['id']);
     if ($post) {
         if (isset($_POST['update'])) {
-            $post->author = $_POST['author'];
             $post->title = $_POST['title'];
             $post->category_id = $_POST['category_id'];
             $post->status = $_POST['status'];
@@ -57,10 +56,6 @@ if (isset($_GET['id'])) {
                     <div class="form-group">
                         <label for="title">Title</label>
                         <input type="text" name="title" class="form-control" value="<?= $post->title; ?>" required autofocus>
-                    </div>
-                    <div class="form-group">
-                        <label for="author">Author</label>
-                        <input type="text" name="author" class="form-control" value="<?= $post->author; ?>" required>
                     </div>
                     <div class="form-group">
                         <label for="category">Category</label>

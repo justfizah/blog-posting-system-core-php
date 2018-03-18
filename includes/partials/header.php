@@ -33,15 +33,15 @@
               <span class="sr-only">(current)</span>
             </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="javascript:void(0)">About Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="javascript:void(0)">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="javascript:void(0)">Contact Us</a>
-          </li>
+          <?php if (!isset($_SESSION['user_id'])): ?>
+              <li class="nav-item">
+                <a class="nav-link" href="/admin">Login</a>
+              </li>
+          <?php else: ?>
+              <li class="nav-item">
+                  <a class="nav-link" href="/admin/logout.php">Logout</a>
+              </li>
+          <?php endif; ?>
         </ul>
       </div>
     </div>

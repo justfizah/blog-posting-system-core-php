@@ -5,7 +5,7 @@
 if (isset($_POST['create'])) {
     $post = new Post;
     if ($post) {
-        $post->author = $_POST['author'];
+        $post->author = $_SESSION['user_first_name'];
         $post->title = $_POST['title'];
         $post->category_id = $_POST['category_id'];
         $post->status = $_POST['status'];
@@ -50,10 +50,6 @@ if (isset($_POST['create'])) {
                     <div class="form-group">
                         <label for="title">Title</label>
                         <input type="text" name="title" class="form-control" required autofocus>
-                    </div>
-                    <div class="form-group">
-                        <label for="author">Author</label>
-                        <input type="text" name="author" class="form-control" required>
                     </div>
                     <div class="form-group">
                         <label for="category">Category</label>
