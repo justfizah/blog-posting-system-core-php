@@ -74,7 +74,7 @@
                     <td><?= $post->updated_at; ?></td>
                     <td class="text-center">
                         <span><a href="/admin/modules/posts/update.php?id=<?= $post->id; ?>"><i class="fa fa-pencil" aria-hidden="true"></i></a></span>
-                        <span><a href="/admin/modules/posts/delete.php?id=<?= $post->id; ?>"><i class="fa fa-trash-o" aria-hidden="true"></i></a></span>
+                        <span><a href="/admin/modules/posts/delete.php?id=<?= $post->id; ?>" onclick="return confirm('Are you sure you want to delete this post?');"><i class="fa fa-trash-o" aria-hidden="true"></i></a></span>
                     </td>
                 </tr>
             <?php endforeach; ?>
