@@ -14,6 +14,7 @@
 
   <!-- CSS -->
   <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/admin/assets/css/prism.css" rel="stylesheet">
   <link href="/assets/css/styles.css" rel="stylesheet">
 </head>
 

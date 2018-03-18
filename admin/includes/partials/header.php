@@ -24,8 +24,9 @@ if (!$session->is_signed_in()) {
   <!-- CSS -->
   <link href="/admin/assets/css/bootstrap.min.css" rel="stylesheet">
   <link href="/admin/assets/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-  <link href="/admin/assets/css/sb-admin.css" rel="stylesheet">
   <link href="/admin/assets/datatables/dataTables.bootstrap4.css" rel="stylesheet">
+  <link href="/admin/assets/css/prism.css" rel="stylesheet">
+  <link href="/admin/assets/css/sb-admin.css" rel="stylesheet">
 </head>
 
 <body class="fixed-nav sticky-footer bg-dark" id="page-top">
