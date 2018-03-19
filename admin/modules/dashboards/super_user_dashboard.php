@@ -1,6 +1,14 @@
 <!-- Header -->
 <?php include($_SERVER["DOCUMENT_ROOT"] . '/admin/includes/partials/header.php'); ?>
 
+<!-- Checking Role For Restriction -->
+<?php
+if (User::find_role_by_id($_SESSION['user_id']) !== 'Super User') {
+    redirect('/admin');
+    exit;
+}
+?>
+
 <!-- Main Content -->
 <div class="content-wrapper">
   <div class="container-fluid">
