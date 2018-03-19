@@ -31,7 +31,7 @@
         </div>
         <div class="card-footer text-muted">
           Posted on <?= $post->created_at; ?> by
-          <a href="#"><?= $post->author; ?></a>
+          <a href="#"><?= $post->find_author_name(); ?></a>
         </div>
       </div>
       <?php endforeach; ?>

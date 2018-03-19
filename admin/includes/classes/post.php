@@ -85,6 +85,18 @@ class Post {
         return !empty($result) ? array_shift($result)['name'] : NULL;
     }
 
+    public function find_author_name() {
+        global $database;
+        try {
+            $stmt = $database->connection->prepare('SELECT first_name FROM users WHERE id=? LIMIT ?');
+            $stmt->execute([$this->user_id, 1]);
+        } catch(PDOException $e) {
+            die('Query Failed! <br>' . $e->getMessage());
+        }
+        $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
+        return !empty($result) ? array_shift($result)['first_name'] : NULL;
+    }
+
     public function create() {
         global $database;
         try {
