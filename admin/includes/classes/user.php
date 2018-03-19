@@ -2,6 +2,7 @@
 class User {
 
     public $id;
+    public $role;
     public $username;
     public $password;
     public $first_name;
@@ -19,6 +20,18 @@ class User {
         }
         $result = $stmt->fetchAll(PDO::FETCH_NUM)[0][0];
         return $result;
+    }
+
+    public static function find_role_by_id($user_id) {
+        global $database;
+        try {
+            $stmt = $database->connection->prepare('SELECT role FROM users WHERE id=? LIMIT ?');
+            $stmt->execute([$user_id, 1]);
+        } catch (PDOException $e) {
+            die('Query Failed! <br>' . $e->getMessage());
+        }
+        $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
+        return !empty($result) ? array_shift($result)['role'] : NULL;
     }
 
     public static function find_all_users() {

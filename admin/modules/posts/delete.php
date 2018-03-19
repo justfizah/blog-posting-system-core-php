@@ -14,7 +14,7 @@ if (!$session->is_signed_in()) {
 
     $post = Post::find_post_by_id($_GET['id']);
 
-    if ($post) {
+    if ($post && $post->user_id === $_SESSION['user_id']) {
         $post->delete();
         $flash->set_message('success', $post->title . '\'s has been removed from our database.');
         redirect('/admin/modules/posts');

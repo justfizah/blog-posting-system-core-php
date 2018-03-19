@@ -6,3 +6,7 @@ ALTER TABLE `categories` CHANGE `id` `id` INT(11) NOT NULL AUTO_INCREMENT;
 ALTER TABLE `users` CHANGE `id` `id` INT(11) NOT NULL AUTO_INCREMENT;
 ALTER TABLE `posts` CHANGE `comments_count` `comments_count` INT( 11 ) NOT NULL DEFAULT '0';
 ALTER TABLE `posts` CHANGE `comments_count` `comments_count` INT( 11 ) NULL DEFAULT '0';
+ALTER TABLE `posts` CHANGE `author` `user_id` INT(11) NOT NULL;
+ALTER TABLE `categories` ADD `user_id` INT(11) NOT NULL AFTER `id`;
+ALTER TABLE `users` ADD `role` VARCHAR(255) NULL DEFAULT 'User' AFTER `id`;
+UPDATE `users` SET `role` = 'Super User' WHERE `users`.`id` = 1;

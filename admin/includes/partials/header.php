@@ -45,12 +45,14 @@ if (!$session->is_signed_in()) {
             <span class="nav-link-text">Dashboard</span>
           </a>
         </li>
-        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Users">
-          <a class="nav-link" href="/admin/modules/users">
-            <i class="fa fa-fw fa-users"></i>
-            <span class="nav-link-text">Users</span>
-          </a>
-        </li>
+        <?php if (User::find_role_by_id($_SESSION['user_id']) === 'Super User') : ?>
+            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Users">
+              <a class="nav-link" href="/admin/modules/users">
+                <i class="fa fa-fw fa-users"></i>
+                <span class="nav-link-text">Users</span>
+              </a>
+            </li>
+        <?php  endif; ?>
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Categories">
           <a class="nav-link" href="/admin/modules/categories">
               <i class="fa fa-fw fa-tags"></i>

@@ -38,7 +38,6 @@
 
         <table class="table table-responsive table-hover" id="dataTable">
             <thead>
-                <th>Author</th>
                 <th>Title</th>
                 <th>Category</th>
                 <th>Status</th>
@@ -51,11 +50,10 @@
             </thead>
             <tbody>
             <?php
-            $posts = Post::find_all_posts();
+            $posts = Post::find_all_posts_by_user_id($_SESSION['user_id']);
             foreach ($posts as $post):
             ?>
                 <tr>
-                    <td><?= $post->author; ?></td>
                     <td><?= $post->title; ?></td>
                     <td><?= $post->find_category_name(); ?></td>
                     <td><?= $post->status; ?></td>

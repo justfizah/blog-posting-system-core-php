@@ -4,7 +4,7 @@
 <?php
 if (isset($_GET['id'])) {
     $post = Post::find_post_by_id($_GET['id']);
-    if ($post) {
+    if ($post && $post->user_id === $_SESSION['user_id']) {
         if (isset($_POST['update'])) {
             $post->title = $_POST['title'];
             $post->category_id = $_POST['category_id'];

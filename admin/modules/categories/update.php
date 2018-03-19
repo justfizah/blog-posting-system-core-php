@@ -4,7 +4,7 @@
 <?php
 if (isset($_GET['id'])) {
     $category = Category::find_category_by_id($_GET['id']);
-    if ($category) {
+    if ($category && $category->user_id === $_SESSION['user_id']) {
         if (isset($_POST['update'])) {
             $category->name   = $_POST['category'];
             $category->update();
@@ -62,7 +62,7 @@ if (isset($_GET['id'])) {
                     </thead>
                     <tbody>
                         <?php
-                        $categories = Category::find_all_categories();
+                        $categories = Category::find_all_categories_by_user_id($_SESSION['user_id']);
                         foreach ($categories as $category) :
                         ?>
                             <tr>

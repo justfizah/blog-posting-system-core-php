@@ -14,7 +14,7 @@ if (!$session->is_signed_in()) {
 
     $category = Category::find_category_by_id($_GET['id']);
 
-    if ($category) {
+    if ($category && $category->user_id === $_SESSION['user_id']) {
         $category->delete();
         $flash->set_message('success', $category->name . '\'s has been removed from our database.');
         redirect('/admin/modules/categories');

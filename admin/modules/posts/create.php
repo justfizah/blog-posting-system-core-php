@@ -5,7 +5,7 @@
 if (isset($_POST['create'])) {
     $post = new Post;
     if ($post) {
-        $post->author = $_SESSION['user_first_name'];
+        $post->user_id = $_SESSION['user_id'];
         $post->title = $_POST['title'];
         $post->category_id = $_POST['category_id'];
         $post->status = $_POST['status'];

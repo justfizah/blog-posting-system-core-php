@@ -7,6 +7,11 @@ if (!$session->is_signed_in()) {
     $flash->set_message('danger', 'Sorry! You are not logged in.');
     redirect('/admin/login.php');
 } else {
+    if (User::find_role_by_id($_SESSION['user_id']) !== 'Super User') {
+        redirect('/admin');
+        exit;
+    }
+
     if (empty($_GET['id'])) {
         $flash->set_message('danger', 'This user not found in our database.');
         redirect('/admin/modules/users');

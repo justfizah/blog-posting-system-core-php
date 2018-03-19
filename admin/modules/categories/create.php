@@ -10,7 +10,8 @@ if (!$session->is_signed_in()) {
     if (isset($_POST['create'])) {
         $category = new Category;
         if ($category) {
-            $category->name   = $_POST['category'];
+            $category->user_id = $_SESSION['user_id'];
+            $category->name = $_POST['category'];
             $category->create();
             $flash->set_message('success', $category->name . ' has been added in our database.');
             redirect('/admin/modules/categories');
