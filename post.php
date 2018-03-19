@@ -27,7 +27,7 @@ if (isset($_GET['id']) && strlen($_GET['id'] !== 0)) {
       <!-- Author -->
       <p class="lead">
         by
-        <a href="#"><?= $post->author; ?></a>
+        <a href="#"><?= $post->find_author_name(); ?></a>
       </p>
 
       <hr>
