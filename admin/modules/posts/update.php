@@ -61,7 +61,7 @@ if (isset($_GET['id'])) {
                         <label for="category">Category</label>
                         <select name="category_id" class="form-control" required>
                             <?php
-                            $categories = Category::find_all_categories();
+                            $categories = Category::find_all_categories_by_user_id($_SESSION['user_id']);
                             foreach ($categories as $category):
                             ?>
                                 <?php if ($post->category_id === $category->id): ?>
