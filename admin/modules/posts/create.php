@@ -64,7 +64,10 @@ if (isset($_POST['create'])) {
                     </div>
                     <div class="form-group">
                         <label for="status">Status</label>
-                        <input type="text" name="status" class="form-control" required>
+                        <select name="status" class="form-control" required>
+                            <option value="Draft">Draft</option>
+                            <option value="Published">Published</option>
+                        </select>
                     </div>
                     <div class="form-group">
                         <label for="image">Image (Recommended: 750x300 Pixels)</label><br>

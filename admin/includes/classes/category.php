@@ -34,7 +34,7 @@ class Category {
     public static function find_all_categories() {
         global $database;
         try {
-            $stmt = $database->connection->prepare('SELECT * FROM categories');
+            $stmt = $database->connection->prepare('SELECT * FROM categories ORDER BY created_at DESC');
             $stmt->execute();
         } catch(PDOException $e) {
             die('Query Failed! <br>' . $e->getMessage());
@@ -58,7 +58,7 @@ class Category {
     public static function find_all_categories_by_user_id($user_id) {
         global $database;
         try {
-            $stmt = $database->connection->prepare('SELECT * FROM categories WHERE user_id=?');
+            $stmt = $database->connection->prepare('SELECT * FROM categories WHERE user_id=? ORDER BY created_at DESC');
             $stmt->execute([$user_id]);
         } catch(PDOException $e) {
             die('Query Failed! <br>' . $e->getMessage());

@@ -65,12 +65,6 @@ if (!$session->is_signed_in()) {
               <span class="nav-link-text">Posts</span>
           </a>
         </li>
-        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Comments">
-          <a class="nav-link" href="/admin/modules/comments">
-              <i class="fa fa-fw fa-comments"></i>
-              <span class="nav-link-text">Comments</span>
-          </a>
-        </li>
       </ul>
       <ul class="navbar-nav sidenav-toggler">
         <li class="nav-item">

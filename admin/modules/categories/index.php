@@ -63,7 +63,7 @@
                                 <td><?= $category->name; ?></td>
                                 <td class="text-center">
                                     <span><a href="/admin/modules/categories/update.php?id=<?= $category->id; ?>"><i class="fa fa-pencil" aria-hidden="true"></i></a></span>
-                                    <span><a href="/admin/modules/categories/delete.php?id=<?= $category->id; ?>"><i class="fa fa-trash-o" aria-hidden="true"></i></a></span>
+                                    <span><a href="/admin/modules/categories/delete.php?id=<?= $category->id; ?>" onclick="return confirm('Are you sure you want to delete this category?');"><i class="fa fa-trash-o" aria-hidden="true"></i></a></span>
                                 </td>
                             </tr>
                         <?php endforeach; ?>

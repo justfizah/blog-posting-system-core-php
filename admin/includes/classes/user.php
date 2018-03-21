@@ -37,7 +37,7 @@ class User {
     public static function find_all_users() {
         global $database;
         try {
-            $stmt = $database->connection->prepare('SELECT * FROM users');
+            $stmt = $database->connection->prepare('SELECT * FROM users ORDER BY created_at DESC');
             $stmt->execute();
         } catch (PDOException $e) {
             die('Query Failed! <br>' . $e->getMessage());

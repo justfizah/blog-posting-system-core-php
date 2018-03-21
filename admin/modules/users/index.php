@@ -66,7 +66,7 @@ if (User::find_role_by_id($_SESSION['user_id']) !== 'Super User') {
           <td><?= $user->updated_at; ?></td>
           <td class="text-center">
             <span><a href="/admin/modules/users/update.php?id=<?= $user->id; ?>"><i class="fa fa-pencil" aria-hidden="true"></i></a></span>
-            <span><a href="/admin/modules/users/delete.php?id=<?= $user->id; ?>"><i class="fa fa-trash-o" aria-hidden="true"></i></a></span>
+            <span><a href="/admin/modules/users/delete.php?id=<?= $user->id; ?>" onclick="return confirm('Are you sure you want to delete this post?');"><i class="fa fa-trash-o" aria-hidden="true"></i></a></span>
           </td>
         </tr>
       <?php endforeach; ?>

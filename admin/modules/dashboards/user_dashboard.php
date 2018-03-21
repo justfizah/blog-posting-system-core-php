@@ -1,6 +1,3 @@
-<!-- Header -->
-<?php include($_SERVER["DOCUMENT_ROOT"] . '/admin/includes/partials/header.php'); ?>
-
 <!-- Checking Role For Restriction -->
 <?php
 if (User::find_role_by_id($_SESSION['user_id']) !== 'User') {
@@ -23,7 +20,7 @@ if (User::find_role_by_id($_SESSION['user_id']) !== 'User') {
 
         <!-- Icon Cards -->
         <div class="row">
-            <div class="col-xl-4 col-sm-6 mb-3">
+            <div class="col-xl-6 col-sm-6 mb-3">
                 <div class="card text-white bg-warning o-hidden h-100">
                     <div class="card-body">
                         <div class="card-body-icon">
@@ -31,7 +28,7 @@ if (User::find_role_by_id($_SESSION['user_id']) !== 'User') {
                         </div>
                         <div class="mr-5"><?= Category::total_number_of_categories_by_user_id($_SESSION['user_id']); ?> Categories!</div>
                     </div>
-                    <a class="card-footer text-white clearfix small z-1" href="#">
+                    <a class="card-footer text-white clearfix small z-1" href="/admin/modules/categories">
                         <span class="float-left">View Details</span>
                         <span class="float-right">
                           <i class="fa fa-angle-right"></i>
@@ -39,7 +36,7 @@ if (User::find_role_by_id($_SESSION['user_id']) !== 'User') {
                     </a>
                 </div>
             </div>
-            <div class="col-xl-4 col-sm-6 mb-3">
+            <div class="col-xl-6 col-sm-6 mb-3">
                 <div class="card text-white bg-success o-hidden h-100">
                     <div class="card-body">
                         <div class="card-body-icon">
@@ -47,23 +44,7 @@ if (User::find_role_by_id($_SESSION['user_id']) !== 'User') {
                         </div>
                         <div class="mr-5"><?= Post::total_number_of_posts_by_user_id($_SESSION['user_id']); ?> Posts!</div>
                     </div>
-                    <a class="card-footer text-white clearfix small z-1" href="#">
-                        <span class="float-left">View Details</span>
-                        <span class="float-right">
-                          <i class="fa fa-angle-right"></i>
-                        </span>
-                    </a>
-                </div>
-            </div>
-            <div class="col-xl-4 col-sm-6 mb-3">
-                <div class="card text-white bg-danger o-hidden h-100">
-                    <div class="card-body">
-                        <div class="card-body-icon">
-                            <i class="fa fa-fw fa-comments"></i>
-                        </div>
-                        <div class="mr-5"><?= 0; ?> Comments!</div>
-                    </div>
-                    <a class="card-footer text-white clearfix small z-1" href="#">
+                    <a class="card-footer text-white clearfix small z-1" href="/admin/modules/posts">
                         <span class="float-left">View Details</span>
                         <span class="float-right">
                           <i class="fa fa-angle-right"></i>
@@ -75,6 +56,3 @@ if (User::find_role_by_id($_SESSION['user_id']) !== 'User') {
 
     </div>
 </div>
-
-<!-- Footer -->
-<?php include($_SERVER["DOCUMENT_ROOT"] . '/admin/includes/partials/footer.php'); ?>

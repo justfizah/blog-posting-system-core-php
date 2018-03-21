@@ -36,48 +36,49 @@
             </div>
         <?php endif; ?>
 
-        <table class="table table-responsive table-hover" id="dataTable">
-            <thead>
-                <th>Title</th>
-                <th>Category</th>
-                <th>Status</th>
-                <th>Image</th>
-                <th>Tags</th>
-                <th>Comments</th>
-                <th>Creation Date</th>
-                <th>Updatation Date</th>
-                <th class="sorting_asc_disabled sorting_desc_disabled"></th>
-            </thead>
-            <tbody>
-            <?php
-            $posts = Post::find_all_posts_by_user_id($_SESSION['user_id']);
-            foreach ($posts as $post):
-            ?>
-                <tr>
-                    <td><?= $post->title; ?></td>
-                    <td><?= $post->find_category_name(); ?></td>
-                    <td><?= $post->status; ?></td>
-                    <td>
-                        <?php if ($post->image): ?>
-                            <img class="img-thumbnail" src="/admin/assets/images/blogs/<?= $post->image; ?>" alt="<?= $post->image; ?>">
-                        <?php
-                        else:
-                            echo "Image Not Available!";
-                        endif;
-                        ?>
-                    </td>
-                    <td><?= $post->tags; ?></td>
-                    <td><?= $post->comments_count; ?></td>
-                    <td><?= $post->created_at; ?></td>
-                    <td><?= $post->updated_at; ?></td>
-                    <td class="text-center">
-                        <span><a href="/admin/modules/posts/update.php?id=<?= $post->id; ?>"><i class="fa fa-pencil" aria-hidden="true"></i></a></span>
-                        <span><a href="/admin/modules/posts/delete.php?id=<?= $post->id; ?>" onclick="return confirm('Are you sure you want to delete this post?');"><i class="fa fa-trash-o" aria-hidden="true"></i></a></span>
-                    </td>
-                </tr>
-            <?php endforeach; ?>
-            </tbody>
-        </table>
+        <div class="table-responsive">
+            <table class="table table-responsive table-hover" id="dataTable">
+                <thead>
+                    <th>Title</th>
+                    <th>Category</th>
+                    <th>Status</th>
+                    <th width="100px">Image</th>
+                    <th>Tags</th>
+                    <th>Creation Date</th>
+                    <th>Updatation Date</th>
+                    <th class="sorting_asc_disabled sorting_desc_disabled"></th>
+                </thead>
+                <tbody>
+                <?php
+                $posts = Post::find_all_posts_by_user_id($_SESSION['user_id']);
+                foreach ($posts as $post):
+                ?>
+                    <tr>
+                        <td><?= $post->title; ?></td>
+                        <td><?= $post->find_category_name(); ?></td>
+                        <td><?= $post->status; ?></td>
+                        <td>
+                            <?php if ($post->image): ?>
+                                <img class="img-thumbnail" src="/admin/assets/images/blogs/<?= $post->image; ?>" alt="<?= $post->image; ?>">
+                            <?php
+                            else:
+                                echo "Image Not Available!";
+                            endif;
+                            ?>
+                        </td>
+                        <td><?= $post->tags; ?></td>
+                        <td><?= $post->created_at; ?></td>
+                        <td><?= $post->updated_at; ?></td>
+                        <td class="text-center">
+                            <span><a href="/post.php?id=<?= $post->id; ?>"><i class="fa fa-search" aria-hidden="true"></i></a></span>
+                            <span><a href="/admin/modules/posts/update.php?id=<?= $post->id; ?>"><i class="fa fa-pencil" aria-hidden="true"></i></a></span>
+                            <span><a href="/admin/modules/posts/delete.php?id=<?= $post->id; ?>" onclick="return confirm('Are you sure you want to delete this post?');"><i class="fa fa-trash-o" aria-hidden="true"></i></a></span>
+                        </td>
+                    </tr>
+                <?php endforeach; ?>
+                </tbody>
+            </table>
+        </div>
 
     </div>
 </div>

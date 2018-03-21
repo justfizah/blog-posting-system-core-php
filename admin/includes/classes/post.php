@@ -8,7 +8,6 @@ class Post {
     public $image;
     public $content;
     public $tags;
-    public $comments_count;
     public $status;
     public $created_at;
     public $updated_at;
@@ -40,7 +39,7 @@ class Post {
     public static function find_all_posts() {
         global $database;
         try {
-            $stmt = $database->connection->prepare('SELECT * FROM posts');
+            $stmt = $database->connection->prepare('SELECT * FROM posts ORDER BY created_at DESC');
             $stmt->execute();
         } catch(PDOException $e) {
             die('Query Failed! <br>' . $e->getMessage());
@@ -64,7 +63,7 @@ class Post {
     public static function find_all_posts_by_user_id($user_id) {
         global $database;
         try {
-            $stmt = $database->connection->prepare('SELECT * FROM posts WHERE user_id=?');
+            $stmt = $database->connection->prepare('SELECT * FROM posts WHERE user_id=? ORDER BY created_at DESC');
             $stmt->execute([$user_id]);
         } catch(PDOException $e) {
             die('Query Failed! <br>' . $e->getMessage());
@@ -100,8 +99,8 @@ class Post {
     public function create() {
         global $database;
         try {
-            $stmt = $database->connection->prepare('INSERT INTO posts (category_id, user_id, title, image, content, tags, comments_count, status) VALUES (?, ?, ?, ?, ?, ?, ?, ?)');
-            $stmt->execute([$this->category_id, $this->user_id, $this->title, $this->image, $this->content, $this->tags, $this->comments_count, $this->status]);
+            $stmt = $database->connection->prepare('INSERT INTO posts (category_id, user_id, title, image, content, tags, status) VALUES (?, ?, ?, ?, ?, ?, ?)');
+            $stmt->execute([$this->category_id, $this->user_id, $this->title, $this->image, $this->content, $this->tags, $this->status]);
         } catch(PDOException $e) {
             die('Query Failed! <br>' . $e->getMessage());
         }
@@ -111,8 +110,8 @@ class Post {
     public function update() {
         global $database;
         try {
-            $stmt = $database->connection->prepare('UPDATE posts SET category_id=?, title=?, image=?, content=?, tags=?, comments_count=?, status=?, updated_at=?  WHERE id=?');
-            $stmt->execute([$this->category_id, $this->title, $this->image, $this->content, $this->tags, $this->comments_count, $this->status, date("Y-m-d H:i:s"), $this->id]);
+            $stmt = $database->connection->prepare('UPDATE posts SET category_id=?, title=?, image=?, content=?, tags=?, status=?, updated_at=?  WHERE id=?');
+            $stmt->execute([$this->category_id, $this->title, $this->image, $this->content, $this->tags, $this->status, date("Y-m-d H:i:s"), $this->id]);
         } catch(PDOException $e) {
             die('Query Failed! <br>' . $e->getMessage());
         }
