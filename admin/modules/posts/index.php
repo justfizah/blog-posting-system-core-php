@@ -37,7 +37,7 @@
         <?php endif; ?>
 
         <div class="table-responsive">
-            <table class="table table-responsive table-hover" id="dataTable">
+            <table class="table table-hover" id="dataTable">
                 <thead>
                     <th>Title</th>
                     <th>Category</th>
@@ -46,7 +46,7 @@
                     <th>Tags</th>
                     <th>Creation Date</th>
                     <th>Updatation Date</th>
-                    <th class="sorting_asc_disabled sorting_desc_disabled"></th>
+                    <th class="sorting_asc_disabled sorting_desc_disabled" width="50px"></th>
                 </thead>
                 <tbody>
                 <?php

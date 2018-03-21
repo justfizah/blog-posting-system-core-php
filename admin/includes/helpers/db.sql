@@ -10,3 +10,4 @@ ALTER TABLE `posts` CHANGE `author` `user_id` INT(11) NOT NULL;
 ALTER TABLE `categories` ADD `user_id` INT(11) NOT NULL AFTER `id`;
 ALTER TABLE `users` ADD `role` VARCHAR(255) NULL DEFAULT 'User' AFTER `id`;
 UPDATE `users` SET `role` = 'Super User' WHERE `users`.`id` = 1;
+ALTER TABLE `posts` DROP `comments_count`;
