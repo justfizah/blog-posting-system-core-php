@@ -41,7 +41,7 @@
                   <a class="nav-link" href="/admin">Admin</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link" href="/admin/logout.php">Logout</a>
+                  <a class="nav-link" href="/admin/logout.php">Logout <?= $_SESSION['user_first_name']; ?></a>
               </li>
           <?php endif; ?>
         </ul>

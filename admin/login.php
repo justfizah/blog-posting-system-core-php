@@ -22,7 +22,7 @@ if (isset($_POST['login'])) {
     if ($user) {
         if (password_verify($password, $user->password)) {
             $session->login($user);
-            redirect('index.php');
+            redirect('/');
         } else {
             $message = 'Either your \'Password\' or \'Username\' may be incorrect.';
         }

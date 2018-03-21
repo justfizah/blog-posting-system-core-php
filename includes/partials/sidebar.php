@@ -1,5 +1,25 @@
 <div class="col-md-4">
 
+  <!-- Side Widget -->
+  <?php if (!$session->is_signed_in()): ?>
+  <div class="card my-4">
+      <h5 class="card-header">Login</h5>
+      <div class="card-body">
+          <form action="/admin/login.php" method="post">
+              <div class="input-group">
+                  <input type="text" name="username" class="form-control" placeholder="Username" required>
+              </div>
+              <div class="input-group">
+                  <input type="password" name="password" class="form-control" placeholder="Password" required>
+                  <span class="input-group-btn">
+                      <button class="btn btn-secondary" name="login" type="submit">Login</button>
+                  </span>
+              </div>
+          </form>
+      </div>
+  </div>
+  <?php endif; ?>
+
   <!-- Search Widget -->
   <div class="card my-4">
     <h5 class="card-header">Search</h5>
@@ -47,14 +67,6 @@
           </ul>
         </div>
       </div>
-    </div>
-  </div>
-
-  <!-- Side Widget -->
-  <div class="card my-4">
-    <h5 class="card-header">Side Widget</h5>
-    <div class="card-body">
-      You can put anything you want inside of these side widgets. They are easy to use, and feature the new Bootstrap 4 card containers!
     </div>
   </div>
   
