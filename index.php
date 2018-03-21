@@ -4,7 +4,7 @@
 <!-- Main Content -->
 <div class="container">
   <?php if(!isset($_SESSION['user_id'])): ?>
-      <div class="jumbotron">
+      <div class="jumbotron text-center">
         <h1 class="display-6">Eleanor Roosevelt</h1>
         <p class="lead">"Learn from the mistakes of others. You can't live long enough to make them all yourself."</p>
       </div>
