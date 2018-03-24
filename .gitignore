@@ -1,3 +1,7 @@
 .idea
 admin/includes/my_config.php
+admin/assets/images/blogs/*
+!admin/assets/images/blogs/.gitkeep
+admin/assets/images/uploads/*
+!admin/assets/images/uploads/.gitkeep
 vendor

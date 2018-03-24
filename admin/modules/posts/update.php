@@ -4,6 +4,7 @@
 <?php
 if (isset($_GET['id'])) {
     $post = Post::find_post_by_id($_GET['id']);
+    $old_image_path = $_SERVER['DOCUMENT_ROOT'] . '/admin/assets/images/blogs/' . $post->image;
     if ($post && $post->user_id === $_SESSION['user_id']) {
         if (isset($_POST['update'])) {
             $post->title = $_POST['title'];
@@ -13,6 +14,7 @@ if (isset($_GET['id'])) {
                 $post->image = $_FILES['image']['name'];
                 $temp_path = $_FILES['image']['tmp_name'];
                 move_uploaded_file($temp_path, $_SERVER['DOCUMENT_ROOT'] . '/admin/assets/images/blogs/' . $post->image);
+                unlink($old_image_path);
             }
             $post->content = $_POST['content'];
             $post->tags = $_POST['tags'];

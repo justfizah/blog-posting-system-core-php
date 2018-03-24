@@ -123,6 +123,7 @@ class Post {
         try {
             $stmt = $database->connection->prepare('DELETE FROM posts WHERE id=?');
             $stmt->execute([$this->id]);
+            unlink($_SERVER['DOCUMENT_ROOT'] . '/admin/assets/images/blogs/' . $this->image);
         } catch(PDOException $e) {
             die('Query Failed! <br>' . $e->getMessage());
         }

@@ -38,7 +38,7 @@ if (isset($_GET['id']) && strlen($_GET['id'] !== 0)) {
       <hr>
 
       <!-- Preview Image -->
-      <img class="img-fluid rounded" src="<?= '/admin/assets/images/blogs/'. $post->image; ?>" alt="<?= $post->title; ?>" width="900px" height="300px">
+      <img class="img-fluid rounded" src="<?= '/admin/assets/images/blogs/'. $post->image; ?>" alt="<?= $post->title; ?>" width="900px">
 
       <hr>
 

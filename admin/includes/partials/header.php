@@ -65,6 +65,12 @@ if (!$session->is_signed_in()) {
               <span class="nav-link-text">Posts</span>
           </a>
         </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Posts">
+            <a class="nav-link" href="/admin/modules/uploads">
+                <i class="fa fa-fw fa-podcast"></i>
+                <span class="nav-link-text">Media</span>
+            </a>
+        </li>
       </ul>
       <ul class="navbar-nav sidenav-toggler">
         <li class="nav-item">

@@ -23,7 +23,7 @@
       foreach ($posts as $post):
       ?>
       <div class="card mb-4">
-        <img class="card-img-top" src="/admin/assets/images/blogs/<?= $post->image; ?>" alt="<?= $post->image; ?>" width="750px" height="300px">
+        <img class="card-img-top" src="/admin/assets/images/blogs/<?= $post->image; ?>" alt="<?= $post->image; ?>" width="750px">
         <div class="card-body">
           <h2 class="card-title"><?= $post->title; ?></h2>
           <p class="card-text" align="justify"><?= substr($post->content, 0, 255) . ' .....'; ?></p>
