@@ -11,3 +11,4 @@ ALTER TABLE `categories` ADD `user_id` INT(11) NOT NULL AFTER `id`;
 ALTER TABLE `users` ADD `role` VARCHAR(255) NULL DEFAULT 'User' AFTER `id`;
 UPDATE `users` SET `role` = 'Super User' WHERE `users`.`id` = 1;
 ALTER TABLE `posts` DROP `comments_count`;
+CREATE TABLE IF NOT EXISTS `uploads` (`id` int(11) NOT NULL AUTO_INCREMENT,`user_id` int(11) NOT NULL,`title` varchar(255) NOT NULL,`description` text,`filename` varchar(255) NOT NULL,`type` varchar(255) NOT NULL,`size` varchar(255) NOT NULL,`created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,`updated_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,PRIMARY KEY (`id`)) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2;

@@ -50,7 +50,7 @@ class Upload {
     public function create() {
         global $database;
         try {
-            $stmt = $database->connection->prepare('INSERT INTO uploads (id, user_id, title, description, filename, type, size, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?)');
+            $stmt = $database->connection->prepare('INSERT INTO uploads (id, user_id, title, description, filename, type, size, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)');
             $stmt->execute([$this->id, $this->user_id, $this->title, $this->description, $this->filename, $this->type, $this->size, $this->created_at, $this->update_at]);
         } catch (PDOException $e) {
             die('Query Failed! <br>' . $e->getMessage());
