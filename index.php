@@ -20,22 +20,25 @@
       <!-- Blog Post -->
       <?php
       $posts = Post::find_all_posts();
-      $total_posts = count($posts);
       foreach ($posts as $post):
+          if ($post->status === 'Published'):
       ?>
-      <div class="card mb-4">
-        <img class="card-img-top" src="/admin/assets/images/blogs/<?= $post->image; ?>" alt="<?= $post->image; ?>" width="750px">
-        <div class="card-body">
-          <h2 class="card-title"><?= $post->title; ?></h2>
-          <p class="card-text" align="justify"><?= substr($post->content, 0, 255) . ' .....'; ?></p>
-          <a href="post.php?id=<?= $post->id; ?>" class="btn btn-primary">Read More &rarr;</a>
-        </div>
-        <div class="card-footer text-muted">
-          Posted on <?= $post->created_at; ?> by
-          <a href="#"><?= $post->find_author_name(); ?></a>
-        </div>
-      </div>
-      <?php endforeach; ?>
+          <div class="card mb-4">
+            <img class="card-img-top" src="/admin/assets/images/blogs/<?= $post->image; ?>" alt="<?= $post->image; ?>" width="750px">
+            <div class="card-body">
+              <h2 class="card-title"><?= $post->title; ?></h2>
+              <p class="card-text" align="justify"><?= substr($post->content, 0, 255) . ' .....'; ?></p>
+              <a href="post.php?id=<?= $post->id; ?>" class="btn btn-primary">Read More &rarr;</a>
+            </div>
+            <div class="card-footer text-muted">
+              Posted on <?= $post->created_at; ?> by
+              <a href="#"><?= $post->find_author_name(); ?></a>
+            </div>
+          </div>
+      <?php
+          endif;
+      endforeach;
+      ?>
 
       <!-- Pagination -->
       <ul class="pagination justify-content-center mb-4">
