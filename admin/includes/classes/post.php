@@ -3,7 +3,7 @@ class Post {
 
     public $id;
     public $user_id;
-    public $author;
+    public $category_id;
     public $title;
     public $image;
     public $content;

@@ -5,7 +5,7 @@
 if (isset($_GET['id'])) {
     $post = Post::find_post_by_id($_GET['id']);
     $old_image_path = $_SERVER['DOCUMENT_ROOT'] . '/admin/assets/images/blogs/' . $post->image;
-    if ($post && $post->user_id === $_SESSION['user_id']) {
+    if ($post && $post->user_id === $_SESSION['user_id'] || $post && User::find_role_by_id($_SESSION['user_id']) === 'Super User') {
         if (isset($_POST['update'])) {
             $post->title = $_POST['title'];
             $post->category_id = $_POST['category_id'];

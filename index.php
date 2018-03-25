@@ -20,6 +20,7 @@
       <!-- Blog Post -->
       <?php
       $posts = Post::find_all_posts();
+      $total_posts = count($posts);
       foreach ($posts as $post):
       ?>
       <div class="card mb-4">

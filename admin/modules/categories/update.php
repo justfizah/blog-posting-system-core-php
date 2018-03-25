@@ -4,7 +4,7 @@
 <?php
 if (isset($_GET['id'])) {
     $category = Category::find_category_by_id($_GET['id']);
-    if ($category && $category->user_id === $_SESSION['user_id']) {
+    if ($category && $category->user_id === $_SESSION['user_id'] || $category && User::find_role_by_id($_SESSION['user_id']) === 'Super User') {
         if (isset($_POST['update'])) {
             $category->name   = $_POST['category'];
             $category->update();
@@ -62,7 +62,13 @@ if (isset($_GET['id'])) {
                     </thead>
                     <tbody>
                         <?php
-                        $categories = Category::find_all_categories_by_user_id($_SESSION['user_id']);
+                        if (User::find_role_by_id($_SESSION['user_id']) === 'Super User') {
+                            $categories = Category::find_all_categories();
+                        } else if (User::find_role_by_id($_SESSION['user_id']) === 'User') {
+                            $categories = Category::find_all_categories_by_user_id($_SESSION['user_id']);
+                        } else {
+                            $categories = [];
+                        }
                         foreach ($categories as $category) :
                         ?>
                             <tr>
