@@ -2,6 +2,7 @@
 class Upload {
 
     public $id;
+    public $user_id;
     public $title;
     public $description;
     public $filename;
@@ -34,11 +35,23 @@ class Upload {
         return !empty($result) ? array_shift($result) : NULL;
     }
 
+    public static function find_all_uploads_by_user_id($user_id) {
+        global $database;
+        try {
+            $stmt = $database->connection->prepare('SELECT * FROM uploads WHERE user_id=? ORDER BY created_at DESC');
+            $stmt->execute([$user_id]);
+        } catch (PDOException $e) {
+            die('Query Failed! <br>' . $e->getMessage());
+        }
+        $result = $stmt->fetchAll(PDO::FETCH_CLASS, 'Upload');
+        return $result;
+    }
+
     public function create() {
         global $database;
         try {
-            $stmt = $database->connection->prepare('INSERT INTO uploads (id, title, description, filename, type, size, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?)');
-            $stmt->execute([$this->id, $this->title, $this->description, $this->filename, $this->type, $this->size, $this->created_at, $this->update_at]);
+            $stmt = $database->connection->prepare('INSERT INTO uploads (id, user_id, title, description, filename, type, size, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?)');
+            $stmt->execute([$this->id, $this->user_id, $this->title, $this->description, $this->filename, $this->type, $this->size, $this->created_at, $this->update_at]);
         } catch (PDOException $e) {
             die('Query Failed! <br>' . $e->getMessage());
         }

@@ -14,7 +14,7 @@ if (!$session->is_signed_in()) {
 
     $upload = Upload::find_upload_by_id($_GET['id']);
 
-    if ($upload) {
+    if ($upload && $upload->user_id === $_SESSION['user_id'] || $upload && User::find_role_by_id($_SESSION['user_id']) === 'Super User') {
         $upload->delete();
         $flash->set_message('success', $upload->title . '\'s has been removed from our database.');
         redirect('/admin/modules/uploads');

@@ -4,7 +4,7 @@
 <?php
 if (isset($_GET['id'])) {
     $upload = Upload::find_upload_by_id($_GET['id']);
-    if ($upload) {
+    if ($upload && $upload->user_id === $_SESSION['user_id'] || $upload && User::find_role_by_id($_SESSION['user_id']) === 'Super User') {
         if (isset($_POST['update'])) {
             $upload->title = $_POST['title'];
             $upload->description = $_POST['description'];

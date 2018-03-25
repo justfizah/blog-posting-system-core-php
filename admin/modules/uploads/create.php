@@ -5,6 +5,7 @@
 if (isset($_POST['upload'])) {
     $upload = new Upload;
     if ($upload) {
+        $upload->user_id = $_SESSION['user_id'];
         $upload->title = $_POST['title'];
         $upload->description = $_POST['description'];
         $upload->filename = $_FILES['image']['name'];
