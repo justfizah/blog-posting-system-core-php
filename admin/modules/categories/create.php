@@ -7,6 +7,16 @@ if (!$session->is_signed_in()) {
     $flash->set_message('danger', 'Sorry! You are not logged in.');
     redirect('/admin/login.php');
 } else {
+    if (isset($_POST['ajax_category'])) {
+        $category = new Category;
+        if ($category) {
+            $category->user_id = $_SESSION['user_id'];
+            $category->name = $_POST['ajax_category'];
+            $category->create();
+            exit;
+        }
+    }
+
     if (isset($_POST['create'])) {
         $category = new Category;
         if ($category) {

@@ -51,16 +51,23 @@ if (isset($_POST['create'])) {
                         <label for="title">Title</label>
                         <input type="text" name="title" class="form-control" required autofocus>
                     </div>
-                    <div class="form-group">
-                        <label for="category">Category</label>
-                        <select name="category_id" class="form-control" required>
-                            <?php
-                            $categories = Category::find_all_categories_by_user_id($_SESSION['user_id']);
-                            foreach ($categories as $category):
-                            ?>
-                            <option value="<?= $category->id; ?>"><?= $category->name; ?></option>
-                            <?php endforeach; ?>
-                        </select>
+                    <div class="form-group" id="reload_category">
+                        <div class="row">
+                            <div class="col-6">
+                                <label for="category">Category</label>
+                                <select name="category_id" class="form-control" required>
+                                    <?php
+                                    $categories = Category::find_all_categories_by_user_id($_SESSION['user_id']);
+                                    foreach ($categories as $category):
+                                        ?>
+                                        <option value="<?= $category->id; ?>"><?= $category->name; ?></option>
+                                    <?php endforeach; ?>
+                                </select>
+                            </div>
+                            <div class="col-6" style="margin-top: 28px;">
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#category">Add Category</button>
+                            </div>
+                        </div>
                     </div>
                     <div class="form-group">
                         <label for="status">Status</label>
@@ -88,6 +95,32 @@ if (isset($_POST['create'])) {
             </div>
         </div>
 
+    </div>
+</div>
+
+<!-- Category Modal -->
+<div class="modal fade" id="category">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Add Category</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form action="/admin/modules/categories/create.php" id="add_category_form">
+                    <div class="form-group">
+                        <label for="category"></label>
+                        <input type="text" name="ajax_category" class="form-control" placeholder="Category Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" class="btn btn-primary" value="Create">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+        </div>
     </div>
 </div>
 

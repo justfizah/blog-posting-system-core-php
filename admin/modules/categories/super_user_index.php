@@ -44,7 +44,7 @@ if (User::find_role_by_id($_SESSION['user_id']) !== 'Super User') {
                 <form action="/admin/modules/categories/create.php" method="POST">
                     <div class="form-group">
                         <label for="category">Category Name</label>
-                        <input class="form-control" type="text" name="category">
+                        <input class="form-control" type="text" name="category" required>
                     </div>
                     <div class="form-group">
                         <input class="btn btn-primary pull-right" type="submit" name="create" value="Add Category">
